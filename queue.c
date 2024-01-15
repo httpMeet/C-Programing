@@ -39,14 +39,14 @@ void main() {
 void insert() {
     int item;
 
-    printf("Enter the element: ");
-    scanf("%d", &item);
-
     if (rear >= max) {
         printf("Queue Overflow\n");
         return;
     } else {
-        rear++;
+
+    rear++;
+    printf("Enter the element: ");
+    scanf("%d", &item);
         q[rear] = item;
         printf("Inserted: %d\n", q[rear]);
     }
